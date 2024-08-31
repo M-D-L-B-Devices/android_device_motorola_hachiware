@@ -23,6 +23,10 @@ TARGET_IS_VAB := true
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/penang/configs/felica_sb,$(TARGET_COPY_OUT_PRODUCT)/etc/felica_sb)
 
+# LowRam
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.config.low_ram=true
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResPenang \
